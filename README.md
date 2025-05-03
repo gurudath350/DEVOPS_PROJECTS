@@ -27,7 +27,7 @@ pip install -r requirements.txt
 # Run the server
 uvicorn server:app --host 0.0.0.0 --port 8000
 
-If you're planning to keep this running in the background, you might also want to add:
+If you are planning to keep this running in the background, you might also want to add:
 
 # Install screen to run server persistently
 sudo apt install screen
