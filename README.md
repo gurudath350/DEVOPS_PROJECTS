@@ -26,3 +26,16 @@ pip install -r requirements.txt
 
 # Run the server
 uvicorn server:app --host 0.0.0.0 --port 8000
+
+If you're planning to keep this running in the background, you might also want to add:
+
+# Install screen to run server persistently
+sudo apt install screen
+
+# Start screen session
+screen -S mcp-server
+
+# Then run the server inside screen
+uvicorn server:app --host 0.0.0.0 --port 8000
+
+# Detach from screen (press Ctrl+A then D)
